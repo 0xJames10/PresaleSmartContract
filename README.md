@@ -246,3 +246,10 @@ instance.pausePresale(latestPresaleId)
 instance.unPausePresale(latestPresaleId)
 ```
 
+Example (*truffle console*):
+```typescript
+let instance = await TokenSaleTest.deployed()
+let latestPresaleId = await instance.presaleId.call()
+// _id = latestPresaleId or the preSaleId which you want to change
+// _enableToBuyWithEth = 1 -> Enabled
+instance.changeEnableBuyWithEth(latestPresaleId, 1)
