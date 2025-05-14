@@ -244,7 +244,6 @@ let instance = await TokenSaleTest.deployed()
 let latestPresaleId = await instance.presaleId.call()
 // _id = latestPresaleId or the preSaleId which you want to change
 instance.pausePresale(latestPresaleId)
-// _id = latestPresaleId or the preSaleId which you want to change
 instance.unPausePresale(latestPresaleId)
 ```
 
